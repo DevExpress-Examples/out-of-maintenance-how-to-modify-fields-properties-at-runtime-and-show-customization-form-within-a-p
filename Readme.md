@@ -4,11 +4,17 @@
 * [Form1.cs](./CS/WindowsApplication32/Form1.cs) (VB: [Form1.vb](./VB/WindowsApplication32/Form1.vb))
 * [Program.cs](./CS/WindowsApplication32/Program.cs) (VB: [Program.vb](./VB/WindowsApplication32/Program.vb))
 <!-- default file list end -->
-# How to modify fields properties at runtime and show customization form within a panel
+# How to Modify Field Properties at Runtime and Show Customization Form within a Panel
 
 
-<p>This example demonstrates how to use the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridFieldBase_Areatopic">PivotGridFieldBase.Area</a>, <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridFieldBase_Visibletopic">PivotGridFieldBase.Visible</a> and <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridFieldBase_GroupIntervaltopic">PivotGridFieldBase.GroupInterval</a> properties at runtime, and use the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridControl_FieldsCustomizationtopic">PivotGridControl.FieldsCustomization</a> method to show the <a href="http://documentation.devexpress.com/#WindowsForms/CustomDocument1927">Customization Form</a> within the panel.</p>
+This example demonstrates how to use the properties:
 
-<br/>
+* [PivotGridFieldBase.Area](http://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridFieldBase.Area)
+*  [PivotGridFieldBase.Visible](http://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridFieldBase.Visible) 
+*  [PivotGridFieldBase.GroupInterval](http://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridFieldBase.GroupInterval)
 
+and the method:
 
+* [PivotGridControl.FieldsCustomization](http://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.FieldsCustomization) 
+
+to show the [Customization Form](https://docs.devexpress.com/WindowsForms/1805) in the panel.

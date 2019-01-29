@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using DevExpress.XtraPivotGrid;
+using System;
+using System.Windows.Forms;
 
 namespace WindowsApplication32
 {
@@ -22,12 +17,10 @@ namespace WindowsApplication32
             this.customerReportsTableAdapter.Fill(this.nwindDataSet.CustomerReports);
 
             InitPivotGrid(pivotGridControl1);            
-            pivotGridControl1.FieldsCustomization( splitContainer1.Panel1 );
-
-
+            pivotGridControl1.FieldsCustomization(splitContainer1.Panel1);
         }
 
-        private void InitPivotGrid(DevExpress.XtraPivotGrid.PivotGridControl pivot)
+        private void InitPivotGrid(PivotGridControl pivot)
         {
             pivot.OptionsCustomization.CustomizationFormStyle = DevExpress.XtraPivotGrid.Customization.CustomizationFormStyle.Excel2007;
             pivot.RetrieveFields( PivotArea.FilterArea, false);

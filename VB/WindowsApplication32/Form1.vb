@@ -1,31 +1,24 @@
-Imports Microsoft.VisualBasic
+﻿Imports DevExpress.XtraPivotGrid
 Imports System
-Imports System.Collections.Generic
-Imports System.ComponentModel
-Imports System.Data
-Imports System.Drawing
-Imports System.Text
 Imports System.Windows.Forms
-Imports DevExpress.XtraPivotGrid
 
 Namespace WindowsApplication32
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub
 
-		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 			' TODO: This line of code loads data into the 'nwindDataSet.CustomerReports' table. You can move, or remove it, as needed.
 			Me.customerReportsTableAdapter.Fill(Me.nwindDataSet.CustomerReports)
 
 			InitPivotGrid(pivotGridControl1)
 			pivotGridControl1.FieldsCustomization(splitContainer1.Panel1)
-
-
 		End Sub
 
-		Private Sub InitPivotGrid(ByVal pivot As DevExpress.XtraPivotGrid.PivotGridControl)
+		Private Sub InitPivotGrid(ByVal pivot As PivotGridControl)
 			pivot.OptionsCustomization.CustomizationFormStyle = DevExpress.XtraPivotGrid.Customization.CustomizationFormStyle.Excel2007
 			pivot.RetrieveFields(PivotArea.FilterArea, False)
 

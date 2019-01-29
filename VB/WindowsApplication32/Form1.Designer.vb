@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace WindowsApplication32
+﻿Namespace WindowsApplication32
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -33,9 +31,9 @@ Namespace WindowsApplication32
 			Me.customerReportsTableAdapter = New WindowsApplication32.nwindDataSetTableAdapters.CustomerReportsTableAdapter()
 			Me.splitContainer1.Panel2.SuspendLayout()
 			Me.splitContainer1.SuspendLayout()
-			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.customerReportsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.customerReportsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' splitContainer1
@@ -82,12 +80,13 @@ Namespace WindowsApplication32
 			Me.Controls.Add(Me.splitContainer1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'			Me.Load += New System.EventHandler(Me.Form1_Load);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
 			Me.splitContainer1.Panel2.ResumeLayout(False)
 			Me.splitContainer1.ResumeLayout(False)
-			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.customerReportsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.customerReportsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
