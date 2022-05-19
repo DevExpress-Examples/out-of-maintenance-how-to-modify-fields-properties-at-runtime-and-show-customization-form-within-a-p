@@ -31,14 +31,15 @@ namespace WindowsApplication32
             this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
-            this.nwindDataSet = new WindowsApplication32.nwindDataSet();
             this.customerReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nwindDataSet = new WindowsApplication32.nwindDataSet();
             this.customerReportsTableAdapter = new WindowsApplication32.nwindDataSetTableAdapters.CustomerReportsTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerReportsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -60,18 +61,19 @@ namespace WindowsApplication32
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
+            this.pivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized;
             this.pivotGridControl1.Size = new System.Drawing.Size(528, 535);
             this.pivotGridControl1.TabIndex = 0;
-            // 
-            // nwindDataSet
-            // 
-            this.nwindDataSet.DataSetName = "nwindDataSet";
-            this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // customerReportsBindingSource
             // 
             this.customerReportsBindingSource.DataMember = "CustomerReports";
             this.customerReportsBindingSource.DataSource = this.nwindDataSet;
+            // 
+            // nwindDataSet
+            // 
+            this.nwindDataSet.DataSetName = "nwindDataSet";
+            this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // customerReportsTableAdapter
             // 
@@ -87,10 +89,11 @@ namespace WindowsApplication32
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerReportsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

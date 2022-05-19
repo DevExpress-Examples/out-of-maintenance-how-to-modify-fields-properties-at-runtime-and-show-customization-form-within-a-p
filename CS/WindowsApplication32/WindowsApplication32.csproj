@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WindowsApplication32</RootNamespace>
     <AssemblyName>WindowsApplication32</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -28,6 +28,7 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,14 +37,20 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v13.1.Core" />
-    <Reference Include="DevExpress.Data.v13.1" />
-    <Reference Include="DevExpress.Utils.v13.1" />
-    <Reference Include="DevExpress.XtraEditors.v13.1" />
-    <Reference Include="DevExpress.XtraPivotGrid.v13.1" />
-    <Reference Include="DevExpress.PivotGrid.v13.1.Core" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core" />
+    <Reference Include="DevExpress.Office.v21.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export" />
+    <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2" />
+    <Reference Include="DevExpress.Utils.v21.2" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />

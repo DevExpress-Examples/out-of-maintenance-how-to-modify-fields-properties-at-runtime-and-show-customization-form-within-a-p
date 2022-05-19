@@ -30,7 +30,7 @@ namespace WindowsApplication32
             pivot.Fields["CompanyName"].Area = PivotArea.RowArea;
             pivot.Fields["CompanyName"].Visible = true;
 
-            pivot.Fields["OrderDate"].GroupInterval = PivotGroupInterval.DateYear;
+            (pivot.Fields["OrderDate"].DataBinding as DataSourceColumnBinding).GroupInterval = PivotGroupInterval.DateYear;
         }
     }
 }

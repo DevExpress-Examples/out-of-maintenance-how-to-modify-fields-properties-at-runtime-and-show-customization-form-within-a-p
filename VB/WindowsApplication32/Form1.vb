@@ -27,7 +27,7 @@ Namespace WindowsApplication32
 			pivot.Fields("CompanyName").Area = PivotArea.RowArea
 			pivot.Fields("CompanyName").Visible = True
 
-			pivot.Fields("OrderDate").GroupInterval = PivotGroupInterval.DateYear
+			DirectCast(pivot.Fields("OrderDate").DataBinding, DataSourceColumnBinding).GroupInterval = PivotGroupInterval.DateYear
 		End Sub
 	End Class
 End Namespace
